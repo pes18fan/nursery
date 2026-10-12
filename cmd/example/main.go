@@ -13,7 +13,6 @@ func main() {
 
 	n.Spawn(func() {
 		fmt.Println("doing some stuff")
-		panic("oh noes")
 	})
 
 	id := n.Spawn(func() {
