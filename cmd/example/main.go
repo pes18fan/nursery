@@ -34,10 +34,10 @@ func do_some_work() {
 func main() {
 	fmt.Println("about to start concurrent work")
 
-	// Do concurrent tasks within here, exiting when all are done
+	// Do some stuff here
 	do_some_work()
 
-	// We will only get here once all the concurrent tasks in the nursery are
-	// done!
+	// We will only get here once all the concurrent tasks in the nursery opened
+	// within `do_some_work` are done!
 	fmt.Println("all work done!")
 }
